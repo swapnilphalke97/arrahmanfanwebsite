@@ -3,12 +3,10 @@
   
   
   <head>
-  
- 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll Website</title>
-    <link rel="stylesheet" href="cssfile.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       crossorigin="anonymous"
@@ -38,6 +36,11 @@
           <li class="navbar__item">
             <a href="#services" class="navbar__links" id="services-page"
               >JukeBox</a
+            >
+          </li>
+           <li class="navbar__item">
+            <a href="#movies" class="navbar__links" id="services-page"
+              >Movies</a
             >
           </li>
           <li class="navbar__btn">
@@ -117,32 +120,44 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
       
       </div>
     
+ 
+  <div class="movie" id="movies"><h1>Movies</h1></div>
+  
+  
+  <div class="movies" id="movies">
+      <div class="movies__wrapper">
+        <div class="movies__card4">
+          
+          
+        </div>
+        <div class="movies__card1">
+         
+         
+        </div>
+        <div class="movies__card2">
+         
+          
+        </div>
+        <div class="movies__card3">
+          
+          
+        </div>
+      </div>
+    </div>
+ 
+    
      
+
+
+    
+  
+  
+  
 
     
     
 </body>
-<script>
-  var box=document.getElementById("box");
-  var up=document.getElementById("up");
-   var down=document.getElementById("down");
-    var rotatevalue=box.style.transform;
-    var rotatesum;
-    
-    up.onclick = function()
-    {
-      rotatesum=rotatevalue + "rotate(-90deg)";
-      box.style.transform = rotatesum;
-      rotatevalue=rotatesum;
-    }
-  down.onclick = function()
-    {
-      rotatesum=rotatevalue + "rotate(+90deg)";
-      box.style.transform = rotatesum;
-      rotatevalue=rotatesum;
-    }
 
-</script>
 
   
 </html>
