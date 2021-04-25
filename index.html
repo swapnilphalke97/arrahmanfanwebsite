@@ -151,7 +151,27 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
     </div>
  
     
-     
+      <script>
+         var box=document.getElementById("box");
+  var up=document.getElementById("up");
+   var down=document.getElementById("down");
+    var rotatevalue=box.style.transform;
+    var rotatesum;
+    
+    up.onclick = function()
+    {
+      rotatesum=rotatevalue + "rotate(-90deg)";
+      box.style.transform = rotatesum;
+      rotatevalue=rotatesum;
+    }
+  down.onclick = function()
+    {
+      rotatesum=rotatevalue + "rotate(+90deg)";
+      box.style.transform = rotatesum;
+      rotatevalue=rotatesum;
+    }
+       </script>
+
 
 
     
