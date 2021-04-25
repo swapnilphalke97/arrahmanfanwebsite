@@ -100,6 +100,7 @@ background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
 
 .profile-image-wrapper img {
   width: 100%;
+  
 }
 .profile-content-wrapper {
    background-color: #a40606;
@@ -115,7 +116,7 @@ background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
 background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(200,27,27,1) 50%, rgba(252,176,69,1) 100%);
   
   display: flex;
-   margin-bottom: 300px;
+   margin-bottom: 180px;
   
 }
 
@@ -190,18 +191,19 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(200,27,27,1) 50%,
   text-align:center;
  
 }
+
 .controls h3{
     margin: 15px 0;
   color: #red;
 }
 
 #up{
-  width: 15px;
+  width: 50px;
   cursor:pointer;
 }
 
 #down{
-  width: 15px;
+  width: 50px;
   cursor:pointer;
   transform: rotate(180deg);
 }
@@ -226,7 +228,9 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(200,27,27,1) 50%,
    display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   
 }
 
@@ -282,4 +286,15 @@ background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(200,27,27,1) 50%,
   
   background-image:url("https://user-images.githubusercontent.com/71014235/115970673-9844f980-a561-11eb-8134-65ddbafe6fba.jpg");
  
+}
+
+
+
+
+
+.imgg
+{
+  border-radius: 8px;
+   width:185%;
+  height:180%;
 }
