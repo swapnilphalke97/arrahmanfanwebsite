@@ -2,18 +2,17 @@
 <html lang="en">
   
   
-   <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll Website</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
   </head>
+  
   
   <body>
     
@@ -51,6 +50,8 @@
       </div>
     </nav>
     
+    
+  
   <div id="header">
  
 </div>
@@ -59,6 +60,7 @@
      
     <div class="profile-image-wrapper"id="home">
           <img src="https://user-images.githubusercontent.com/71014235/115962006-dc6ed480-a536-11eb-8f1e-6a22d305198f.jpg" alt="">
+     
         </div>
 
         <div class="profile-content-wrapper"id="about">
@@ -74,6 +76,8 @@
     
     
     <div class="juke" id="services">
+        <div><img src="https://user-images.githubusercontent.com/71014235/115984179-52b91880-a5c3-11eb-9996-5fb16f925271.jpg" class="imgg">
+   </div>
       <div class"overlay"></div>
        <img src="https://user-images.githubusercontent.com/71014235/115964351-b1d64900-a541-11eb-81d0-80e5e22638a4.jpg" class="mainimg">
       <div id="box">
@@ -116,7 +120,7 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
   
     <div class="controls">
       <img src="https://user-images.githubusercontent.com/71014235/115965690-ea792100-a547-11eb-87e0-476da9ffbebd.png" id="up">
-      <h3>Click The Arrow to Navigate JukeBox</h3>
+       <a href="#home" id="navbar__logo">Navigate</a>
       <img src="https://user-images.githubusercontent.com/71014235/115965690-ea792100-a547-11eb-87e0-476da9ffbebd.png" id="down">
       
       </div>
@@ -145,29 +149,9 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
         </div>
       </div>
     </div>
-  </div>
  
     
-     <script>
-         var box=document.getElementById("box");
-  var up=document.getElementById("up");
-   var down=document.getElementById("down");
-    var rotatevalue=box.style.transform;
-    var rotatesum;
-    
-    up.onclick = function()
-    {
-      rotatesum=rotatevalue + "rotate(-90deg)";
-      box.style.transform = rotatesum;
-      rotatevalue=rotatesum;
-    }
-  down.onclick = function()
-    {
-      rotatesum=rotatevalue + "rotate(+90deg)";
-      box.style.transform = rotatesum;
-      rotatevalue=rotatesum;
-    }
-       </script>
+     
 
 
     
