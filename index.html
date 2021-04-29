@@ -4,12 +4,13 @@
   
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scroll Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      crossorigin="anonymous"
+    <meta name="viewport" content="width=device-width, initial-scale=20000.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     />
   </head>
   
@@ -149,10 +150,40 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
         </div>
       </div>
     </div>
+     
+
+<figure class="text-center">
+<button type="button" class="btn btn-primary" id="ran"><h1 class="display-1">Get Your Lucky AR song</h1></button></figure>
+  
+  
+ <div class="shouldbe">
+ <div id="welcomeDiv1"  style="display:none;" class="answer_list1"> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/ITc4T8DfxFA">
+</iframe></div>
+  
+ <div id="welcomeDiv2"  style="display:none;" class="answer_list2"> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/xwwAVRyNmgQ">
+</iframe></div>
+  
+ <div id="welcomeDiv3"  style="display:none;" class="answer_list3"> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/jDn2bn7_YSM">
+</iframe></div>
+  
+  <div id="welcomeDiv4"  style="display:none;" class="answer_list4"> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/_ikZtcgAMxo">
+</iframe></div>
+  
+  
  
+
+  <div id="welcomeDiv5"  style="display:none;" class="answer_list5"> <iframe width="420" height="315"
+src="https://www.youtube.com/embed/S1aQhVUy_9g">
+</iframe></div>
+  
+  </div>
     
      <script>
-         var box=document.getElementById("box");
+          var box=document.getElementById("box");
   var up=document.getElementById("up");
    var down=document.getElementById("down");
     var rotatevalue=box.style.transform;
@@ -169,6 +200,44 @@ src="https://www.youtube.com/embed/_kABjNDQ4pg ">
       rotatesum=rotatevalue + "rotate(+90deg)";
       box.style.transform = rotatesum;
       rotatevalue=rotatesum;
+    }
+
+var random;
+var ran=document.getElementById("ran");
+ran.onclick = function()
+    {
+      random=Math.ceil(Math.random()*4);
+      
+       
+ switch(random) {
+  case 1:
+      document.getElementById('welcomeDiv1').style.display = "block";
+    break;
+     
+  case 2:
+     document.getElementById('welcomeDiv2').style.display = "block";
+    break;
+    break;
+     case 3:
+     document.getElementById('welcomeDiv3').style.display = "block";
+    break;
+    
+    break;
+     case 4:
+     document.getElementById('welcomeDiv4').style.display = "block";
+    break;
+   case 5:
+      document.getElementById('welcomeDiv5').style.display = "block";
+    break;
+    break;
+  default:
+      document.getElementById('welcomeDiv5').style.display = "block";
+}
+  document.getElementById('ran').style.display = "none";
+
+  
+  
+  
     }
        </script>  
 
